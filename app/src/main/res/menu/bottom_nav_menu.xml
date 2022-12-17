@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/bn_home_icon_blank"/>
+    <item
+        android:id="@+id/savedNewsFragment"
+        android:title="Saved"
+        android:icon="@drawable/bn_bookmark_icon_blank"/>
+    <item
+        android:id="@+id/searchNewsFragment"
+        android:icon="@drawable/bn_saved_icon_blank"
+        android:title="Search"/>
+</menu>
