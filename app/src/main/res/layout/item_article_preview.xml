@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="30dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Add image view, We will not set any data here.-->
+
+        <!--Text view for showing the language name-->
+
+        <!--Text view fr showing exp-->
+
+        <!--Text view for showing the options menu-->
+
+        <TextView
+            android:id="@+id/home_textview_newspapername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="The Hindu"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/home_textview_locationanddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Tokyo 1:10pm"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/home_textview_newspapername"
+            app:layout_constraintTop_toBottomOf="@id/home_textview_newspapername" />
+
+        <ImageView
+            android:id="@+id/home_imageView_newsimage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_textview_locationanddate"
+            app:srcCompat="@drawable/hockey" />
+
+        <TextView
+            android:id="@+id/home_textview_headline"
+            android:layout_width="321dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="Tokyo Olympics live updates: India men to play germany in hockey bronze play off"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/home_imageView_newsimage"
+            app:layout_constraintTop_toBottomOf="@+id/home_imageView_newsimage" />
+
+        <ImageButton
+            android:id="@+id/home_imageButton_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/home_imageView_newsimage"
+            app:layout_constraintTop_toBottomOf="@+id/home_imageView_newsimage"
+            app:srcCompat="@drawable/ic_baseline_bookmark_border_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
